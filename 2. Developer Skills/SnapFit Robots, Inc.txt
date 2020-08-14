@@ -1,0 +1,132 @@
+
+	Author: AnOnYmOus001100
+	Date: 14/08/2020
+	
+
+Description:
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+	SnapFit Robots, Inc.
+	Now that you’ve had more practice with the Git workflow, let’s solidify your new skills even more.
+
+	In this project, you will be working on assembly instructions for Snap-Fit Robots Inc., a build-it-yourself robot company.
+
+	If you get stuck during this project or would like to see an experienced developer work through it, click “Get Help“ to see a project walkthrough video.
+
+	Tasks:
+
+	Mark the tasks as complete by checking them off
+	SnapFit Robots Inc.
+
+1.Initialize a new Git project.
+
+
+2.Check the status of the Git project.
+You will see multiple files listed in the output as “Untrackd”.
+
+3.Add each file to the Git staging area.
+
+4.Check the status of the Git project again.
+
+5.Make a commit.
+
+6.View your Git commit log.
+
+If your cursor is stuck in Git log mode, press “q” on your keyboard to escape.
+
+7. Include this line in disclaimer.txt:
+Warning: For best battery life, do not leave robot battery charging overnight.Click Save.
+
+Add the file to the staging area.
+
+9. Now make a commit.
+
+10. View your Git commit log again to identify your commit.
+
+11.Revise each file in whatever ways you’d like. Then add your changes to the staging area and make another
+
+
+=======================================================================================================================================================
+
+Commands:
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+$ git init
+
+Initialized empty Git repository in /home/ccuser/workspace/snapfit-robots/.git/
+
+$ git status
+
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        disclaimer.txt
+        instructions.txt
+        warranty.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+$ git add disclaimer.txt instructions.txt warranty.txt 
+
+$ git statusOn branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   disclaimer.txt
+        new file:   instructions.txt
+        new file:   warranty.txt
+
+$ git commit -m "added 3 files"
+
+[master (root-commit) 4b05763] added 3 files
+ 3 files changed, 70 insertions(+)
+ create mode 100644 disclaimer.txt
+ create mode 100644 instructions.txt
+ create mode 100644 warranty.txt
+
+$ git log
+
+commit 4b0576303a7ebe10a1dd199fb769cb5cd793bfa6
+Author: codecademy <ccuser@codecademy.com>
+Date:   Fri Aug 14 07:07:04 2020 +0000
+
+    added 3 files
+
+$ git add disclaimer.txt 
+
+$ git commit -m "added Warning to disclaimer.txt"
+
+[master 78342f8] added Warning to disclaimer.txt
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+$ git log
+
+commit 78342f864a140fe4ba4c635a01b6fc0642b5d37b
+Author: codecademy <ccuser@codecademy.com>
+Date:   Fri Aug 14 07:08:40 2020 +0000
+
+    added Warning to disclaimer.txt
+
+commit 4b0576303a7ebe10a1dd199fb769cb5cd793bfa6
+Author: codecademy <ccuser@codecademy.com>
+Date:   Fri Aug 14 07:07:04 2020 +0000
+
+    added 3 files
+
+$ git add disclaimer.txt instructions.txt warranty.txt 
+
+$ git commit -m "modified all files"[master 409efc7] modified all files
+
+ 3 files changed, 5 insertions(+)
+
+$ git status
+
+On branch master
+nothing to commit, working directory clean
+
